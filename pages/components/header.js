@@ -3,7 +3,7 @@ import { signOut } from "next-auth/client";
 
 export default function Header() {
   const handleLogout = async () => {
-    await signOut();
+    signOut({ callbackUrl: "/login" });
   };
 
   return (
