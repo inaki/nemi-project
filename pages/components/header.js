@@ -23,22 +23,22 @@ export default function Header() {
               <summary className="text-xl">about</summary>
               <ul className="p-2 bg-base-100 text-gray-800 ">
                 <li>
-                  <Link href="/vision">vision</Link>
+                  <Link href="/about/vision">vision</Link>
                 </li>
                 <li>
-                  <Link href="/values">values</Link>
+                  <Link href="/about/values">values</Link>
                 </li>
                 <li>
-                  <Link href="/community">community</Link>
+                  <Link href="/about/community">community</Link>
                 </li>
                 <li>
-                  <Link href="/ventanilla">ventanilla</Link>
+                  <Link href="/about/ventanilla">ventanilla</Link>
                 </li>
                 <li>
-                  <Link href="/build">build</Link>
+                  <Link href="/about/build">build</Link>
                 </li>
                 <li>
-                  <Link href="/investment">investment</Link>
+                  <Link href="/about/investment">investment</Link>
                 </li>
               </ul>
             </details>
@@ -48,13 +48,13 @@ export default function Header() {
               <summary className="text-xl">land</summary>
               <ul className="p-2 bg-base-100 text-gray-800 ">
                 <li>
-                  <Link href="/map">map</Link>
+                  <Link href="/land/map">map</Link>
                 </li>
                 <li>
-                  <Link href="/land">land</Link>
+                  <Link href="/land/land">land</Link>
                 </li>
                 <li>
-                  <Link href="/areas">areas</Link>
+                  <Link href="/land/areas">areas</Link>
                 </li>
               </ul>
             </details>
