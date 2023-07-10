@@ -1,10 +1,11 @@
-import Layout from "../components/Layout";
+import Layout from "pages/components/layout";
 import Image from "next/image";
-import landImage from "../../public/images/slides/land.png";
+import landImage from "public/images/slides/land.png";
+import { bgs } from "lib/bg.config";
 
 export default function land() {
   return (
-    <Layout>
+    <Layout bgImage={bgs.land}>
       <Image src={landImage} alt="Land" className="fixed top-150 left-2" />
       <p className="bg-[#cedad8] fixed top-[200px] w-[600px] p-4">
         <span className="font-bold">Our land </span>is situated along the

@@ -1,8 +1,9 @@
-import Layout from "../components/Layout";
+import Layout from "pages/components/layout";
+import { bgs } from "lib/bg.config";
 
 export default function Vision() {
   return (
-    <Layout>
+    <Layout bgImage={bgs.vision}>
       <div className="flex flex-col items-center justify-between p-24">
         <h1 className="text-white">Get in touch!</h1>
         <form className="flex flex-col w-[350px] bg-white text-gray-500 bg-opacity-50 rounded-lg p-5">

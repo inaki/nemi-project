@@ -1,10 +1,11 @@
-import Layout from "../components/Layout";
+import Layout from "pages/components/layout";
 import Image from "next/image";
-import sustainability from "../../public/images/slides/sustainability.png";
+import sustainability from "public/images/slides/sustainability.png";
+import { bgs } from "lib/bg.config";
 
 export default function Map() {
   return (
-    <Layout>
+    <Layout bgImage={bgs.sustainability}>
       <Image
         src={sustainability}
         alt="sustainability"

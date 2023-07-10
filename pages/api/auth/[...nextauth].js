@@ -1,5 +1,5 @@
-import { verifyPassword } from "../../lib/auth";
-import { connectToDatabase } from "../../lib/db";
+import { verifyPassword } from "lib/auth";
+import { connectToDatabase } from "pages/api/db";
 import NextAuth from "next-auth";
 import Provider from "next-auth/providers";
 

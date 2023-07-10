@@ -1,10 +1,10 @@
 import { Inter } from "next/font/google";
-import Layout from "./components/layout";
+import Layout from "pages/components/layout";
 import { getSession } from "next-auth/client";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export async function getServerSideProps(context) {
+async function getServerSideProps(context) {
   const session = await getSession(context);
   if (!session) {
     return {
@@ -20,7 +20,5 @@ export async function getServerSideProps(context) {
 }
 
 export default function Home({ session }) {
-  if (!session) return <div>loading...</div>;
-
-  return <Layout>Home</Layout>;
+  return <Layout>Home dad</Layout>;
 }

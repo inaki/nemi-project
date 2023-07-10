@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { connectToDatabase } from "../lib/db";
-import { hashPassword } from "../lib/auth";
+import { connectToDatabase } from "pages/api/db";
+import { hashPassword } from "lib/auth";
 
 export default async function handler(req, res) {
   const data = await req.body;
