@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { signOut } from "next-auth/client";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const handleLogout = async () => {
-    signOut({ callbackUrl: "/login" });
+    const data = await signOut({ callbackUrl: "/login" });
   };
 
   return (

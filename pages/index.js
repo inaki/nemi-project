@@ -1,10 +1,11 @@
 import { Inter } from "next/font/google";
 import Layout from "pages/components/layout";
 import { getSession } from "next-auth/client";
+import { bgs } from "lib/bg.config";
 
 const inter = Inter({ subsets: ["latin"] });
 
-async function getServerSideProps(context) {
+export const getServerSideProps = async (context) => {
   const session = await getSession(context);
   if (!session) {
     return {
@@ -17,8 +18,17 @@ async function getServerSideProps(context) {
   return {
     props: { session },
   };
-}
+};
 
 export default function Home({ session }) {
-  return <Layout>Home dad</Layout>;
+  if (!session)
+    return (
+      <div
+        className="bg-cover bg-center h-screen"
+        style={{
+          backgroundImage: `url("/images/${bgs.home}")`,
+        }}
+      ></div>
+    );
+  return <Layout></Layout>;
 }
